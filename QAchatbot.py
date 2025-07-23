@@ -10,7 +10,7 @@ os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # Function to load Gemini Pro model and get response
-model = genai.GenerativeModel("gemini-pro")
+model = genai.GenerativeModel("gemini-2.0-flash")
 chat = model.start_chat(history=[])
 
 # Initialize ConversationBufferMemory to store chat history
